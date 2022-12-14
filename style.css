@@ -1,0 +1,163 @@
+
+/* Generale */
+
+.body {
+    position: relative;
+   }
+
+   /* Titolo */
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+#chess {
+    position: absolute;
+    font-size: 0;
+    /* Centrare scacchiera nel body */
+    top: 30%;
+    left: 30%;
+    margin-top: -100px;
+    margin-left: 10px;
+    }
+
+
+#chess div {
+    width: 70px;
+    height: 60px;
+    float: left;
+    border: 1px solid black;
+    font-size: 1rem;
+   }
+
+   /* Rosso mouse caselle scure */
+    #chess div:hover {
+    background-color: red;
+    }
+
+     /* Rosso mouse caselle chiare */
+    #chess div:nth-of-type(odd):hover {
+    background-color: red;
+    }
+
+    /* Posizionare I riga verticale rispetto a float left in #chess div */
+    #chess div:nth-of-type(8n+1){   
+    clear:left;
+    }
+
+    /* Colore caselle 1-17-33-49; 1 colonna da sx */
+    #chess div:nth-of-type(16n+1),
+    /* Colore caselle 3-19-35-51; 3 colonna da sx */
+    #chess div:nth-of-type(16n+3),
+     /* Colore caselle 5-21-37-53; 5 colonna da sx */
+    #chess div:nth-of-type(16n+5),
+    /* Colore caselle 7-23-39-55; 7 colonna da sx */
+    #chess div:nth-of-type(16n+7),
+    /* Colore caselle 10-26-42-58; 2 colonna da sx */
+    #chess div:nth-of-type(16n+10),
+    /* Colore caselle 12-28-44-60; 4 colonna da sx */
+    #chess div:nth-of-type(16n+12),
+    /* Colore caselle 14-30-46-62; 6 colonna da sx */
+    #chess div:nth-of-type(16n+14),
+    /* Colore caselle 16-32-48-64; 8 colonna da sx */
+    #chess div:nth-of-type(16n+16) {       
+    background-color:#b09069;
+    }
+
+   
+
+/* Colore scuro caselle delle colonne BDFH  */
+  div:nth-of-type(2n+0), 
+/* Colore scuro caselle delle colonne ACEG  */
+  div:nth-of-type(1n+2) {  
+  background-color: black;
+}
+
+ /* Posizionamento Lettere top Side */
+/* Posizionamento A Div 1  */
+#chess div:nth-child(1) span:nth-child(1),
+/* Posizionamento B Div 2  */
+#chess div:nth-child(2) span:nth-child(1),
+/* Posizionamento C Div 3  */
+#chess div:nth-child(3) span:nth-child(1),
+/* Posizionamento D Div 4  */
+#chess div:nth-child(4) span:nth-child(1),
+/* Posizionamento E Div 5  */
+#chess div:nth-child(5) span:nth-child(1),
+/* Posizionamento F Div 6  */
+#chess div:nth-child(6) span:nth-child(1),
+/* Posizionamento G Div 7  */
+#chess div:nth-child(7) span:nth-child(1),
+/* Posizionamento H Div 8  */
+#chess div:nth-child(8) span:nth-child(1) {
+    position: absolute;
+    margin-top: -22px;
+    margin-left:29px;
+} 
+
+/* Posizionamento Numeri Left Side */
+/* Posizionamento 2 Div 9 */
+#chess div:nth-child(9) span:nth-child(1),
+/* Posizionamento 3 Div 17  */
+#chess div:nth-child(17) span:nth-child(1),
+/* Posizionamento 4 Div 25  */
+#chess div:nth-child(25) span:nth-child(1),
+/* Posizionamento 5 Div 33  */
+#chess div:nth-child(33) span:nth-child(1),
+/* Posizionamento 6 Div 41  */
+#chess div:nth-child(41) span:nth-child(1),
+/* Posizionamento 7 Div 49  */
+#chess div:nth-child(49) span:nth-child(1),
+/* Posizionamento 1 Div 57  */
+#chess div:nth-child(57) span:nth-child(1),
+/* Posizionamento 1 Div 1  */
+#chess div:nth-child(1) span:nth-child(2) {
+    position: absolute;
+    margin-top: 23px;
+    margin-left:-19px;
+} 
+
+/* Posizionamento Numeri right Side  */
+/* Posizionamento 1 Div 8  */
+#chess div:nth-child(8) span:nth-child(2),
+/* Posizionamento 2 Div 16  */
+#chess div:nth-child(16) span:nth-child(1),
+/* Posizionamento 3 Div 24  */
+#chess div:nth-child(24) span:nth-child(1),
+/* Posizionamento 4 Div 32  */
+#chess div:nth-child(32) span:nth-child(1),
+/* Posizionamento 5 Div 40  */
+#chess div:nth-child(40) span:nth-child(1),
+/* Posizionamento 6 Div 48  */
+#chess div:nth-child(48) span:nth-child(1),
+/* Posizionamento 7 Div 56  */
+#chess div:nth-child(56) span:nth-child(1),
+/* Posizionamento 1 Div 64  */
+#chess div:nth-child(64) span:nth-child(1) {
+    position: absolute;
+    margin-top: 23px;
+    margin-left:75px;
+} 
+
+/* Posizionamento Lettere Bottom Side  */
+/* Posizionamento A Div 57  */
+#chess div:nth-child(57) span:nth-child(2),
+/* Posizionamento B Div 58  */
+#chess div:nth-child(58) span:nth-child(1),
+/* Posizionamento C Div 59  */
+#chess div:nth-child(59) span:nth-child(1),
+/* Posizionamento D Div 60  */
+#chess div:nth-child(60) span:nth-child(1),
+/* Posizionamento E Div 61  */
+#chess div:nth-child(61) span:nth-child(1),
+/* Posizionamento F Div 62  */
+#chess div:nth-child(62) span:nth-child(1),
+/* Posizionamento G Div 63  */
+#chess div:nth-child(63) span:nth-child(1),
+/* Posizionamento H Div 64  */
+#chess div:nth-child(64) span:nth-child(2) {
+    position: absolute;
+    margin-top: 64px;
+    margin-left:26px;
+} 
